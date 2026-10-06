@@ -7,6 +7,8 @@ asks a simple question: *twelve hospitals perform the same operation; which ones
 complication rates?* It then shows why ranking raw rates misleads, and how a **hierarchical
 Bayesian model** gives a better answer.
 
+**Slides:** [PDF](slides/introduction-to-probabilistic-programming.pdf)
+
 ## Run the notebook
 
 **In your browser (no installation):**
@@ -31,10 +33,9 @@ jupyter lab hierarchical_model_numpyro_student.ipynb
 |---|---|
 | [`hierarchical_model_numpyro_student.ipynb`](hierarchical_model_numpyro_student.ipynb) | The notebook, ready to run |
 | [`hierarchical_model_numpyro.ipynb`](hierarchical_model_numpyro.ipynb) | The same notebook with all outputs, to read without running |
+| [`slides/introduction-to-probabilistic-programming.pdf`](slides/introduction-to-probabilistic-programming.pdf) | The workshop slides |
 | `src/` | Notebook source and the script that builds it |
 | [`FACILITATOR.md`](FACILITATOR.md) | Run of show and prepared Q&A notes |
-
-Slides will be added after the workshop.
 
 ## The notebook
 

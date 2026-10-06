@@ -10,7 +10,7 @@ then Q&A.
 
 | File | What it is |
 |---|---|
-| **Slides** | [Slide deck](https://claude.ai/artifact/JKxNK7VEbUc3tkTMzqxfk9): 27 slides with speaker notes, exportable to PDF/PPTX |
+| **Slides** | [Slide deck](https://claude.ai/artifact/JKxNK7VEbUc3tkTMzqxfk9): 29 slides with speaker notes, exportable to PDF/PPTX |
 | `hierarchical_model_numpyro.ipynb` | Presenter copy, **with outputs**, so it can be shown even if live execution fails. A 15-minute main path, then Extras for self-study |
 | `hierarchical_model_numpyro_student.ipynb` | Same notebook with outputs cleared, for participants to run |
 | `src/notebook.py` | Source of the notebook (percent format). Edit this, then rebuild (below) |
@@ -50,8 +50,8 @@ The full notebook runs in about 10 seconds on a laptop CPU.
 | 4–25 | Slides 4–18 | Belief, probability primer (definitions in symbols, then joint, marginalisation, conditioning on a rain/cloud table), Bayes' rule derived from conditioning, diagnostic test over three slides (named quantities and a guess, Bayes' rule step by step, counting 100,000 people), prior → posterior, priors, MCMC over two slides (why the denominator is hard; how MCMC avoids it), diagnostics, what a PPL is |
 | 25–30 | Slides 19–24 (hierarchical models intro, pooling, model, code, workflow, divider) | Introduce the hospital model on slides so the notebook can move quickly |
 | 30–45 | Notebook §1–5 (main path) | Stop at "Takeaways". The Extras are for self-study |
-| 45–47 | Slides 25–26 (results, takeaways) | Close the loop on Hospital A |
-| 47–60 | Slide 27 (Q&A) | See prepared answers below |
+| 45–49 | Slides 25–28 (results ×3, takeaways) | Hospital A (H01) is a coin flip; partial pooling halves the error; τ learned from data |
+| 49–60 | Slide 29 (Q&A) | See prepared answers below |
 
 **If you're short on time**, cut the counting slide (12; give the 100,000-people version in one
 sentence on slide 11), then go straight from the shrinkage plot (§4) to the "worse than typical"
@@ -82,7 +82,7 @@ JAX/NumPyro versions may differ slightly; the qualitative story holds.)
 ## Before the session
 
 - [x] Fill in the workshop, date and presenter (slide 1)
-- [x] Add the notebook link (slide 27)
+- [x] Add the notebook link (slide 29)
 - [ ] Share the deck from its Share menu if participants should see it (it's private by default)
 - [ ] Test the student notebook on Colab from a fresh account
 - [ ] Have the presenter notebook (with outputs) open as a fallback
