@@ -1,13 +1,22 @@
 # Introduction to Probabilistic Programming
 
-Big Data Africa School 2026 · 6 October 2026 · Dr Chris Finlay (EPFL)
+Chris Finlay (EPFL)
 
 A hands-on introduction to Bayesian modelling with [NumPyro](https://num.pyro.ai). The notebook
 asks a simple question: *twelve hospitals perform the same operation; which ones have worse
 complication rates?* It then shows why ranking raw rates misleads, and how a **hierarchical
 Bayesian model** gives a better answer.
 
-**Slides:** [PDF](slides/introduction-to-probabilistic-programming.pdf)
+## Slides
+
+The talk has been given more than once, and each version is kept:
+
+| Given at | Slides |
+|---|---|
+| AI, Uncertainty & Simulation, Mauritius, November 2026 | [PDF](slides/ai-uncertainty-simulation-2026.pdf) (most recent) |
+| Big Data Africa School, October 2026 | [PDF](slides/introduction-to-probabilistic-programming.pdf) |
+
+The figures used on the results slides are in [`slides/figures/`](slides/figures).
 
 ## Run the notebook
 
@@ -33,7 +42,7 @@ jupyter lab hierarchical_model_numpyro_student.ipynb
 |---|---|
 | [`hierarchical_model_numpyro_student.ipynb`](hierarchical_model_numpyro_student.ipynb) | The notebook, ready to run |
 | [`hierarchical_model_numpyro.ipynb`](hierarchical_model_numpyro.ipynb) | The same notebook with all outputs, to read without running |
-| [`slides/introduction-to-probabilistic-programming.pdf`](slides/introduction-to-probabilistic-programming.pdf) | The workshop slides |
+| [`slides/`](slides) | Slide decks (PDF) and the result figures |
 | `src/` | Notebook source and the script that builds it |
 | [`FACILITATOR.md`](FACILITATOR.md) | Run of show and prepared Q&A notes |
 

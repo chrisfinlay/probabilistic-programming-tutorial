@@ -1,16 +1,14 @@
 # Facilitator guide: Introduction to Probabilistic Programming
 
-Big Data Africa School 2026 · 6 October 2026 · Dr Chris Finlay (EPFL)
-
-A one-hour workshop for final-year undergraduates through PhD students (biomedical to computer
-science). It covers Bayesian ideas first, then a walkthrough of a hierarchical model in NumPyro,
+Notes for giving this as a one-hour session to final-year undergraduates through PhD students
+from mixed backgrounds. It covers Bayesian ideas first, then a walkthrough of a hierarchical model in NumPyro,
 then Q&A.
 
 ## Files
 
 | File | What it is |
 |---|---|
-| **Slides** | [Slide deck](https://claude.ai/artifact/JKxNK7VEbUc3tkTMzqxfk9): 29 slides with speaker notes, exportable to PDF/PPTX |
+| `slides/` | Slide decks as PDF, one per time the talk was given (see the README), and the result figures in `slides/figures/` |
 | `hierarchical_model_numpyro.ipynb` | Presenter copy, **with outputs**, so it can be shown even if live execution fails. A 15-minute main path, then Extras for self-study |
 | `hierarchical_model_numpyro_student.ipynb` | Same notebook with outputs cleared, for participants to run |
 | `src/notebook.py` | Source of the notebook (percent format). Edit this, then rebuild (below) |
@@ -43,15 +41,17 @@ The full notebook runs in about 10 seconds on a laptop CPU.
 
 ## Run of show (60 min)
 
+Slide numbers follow the most recent deck, `slides/ai-uncertainty-simulation-2026.pdf` (30 slides).
+
 | Time | Slides / notebook | Notes |
 |---|---|---|
-| 0–2 | Slides 1–2 (cover, plan) | Share the notebook link so people can start it running |
+| 0–2 | Slides 1–2 (cover, outline) | Share the notebook link so people can start it running |
 | 2–4 | Slide 3 (which hospital is worse?) | Show of hands. Don't answer it yet |
 | 4–25 | Slides 4–18 | Belief, probability primer (definitions in symbols, then joint, marginalisation, conditioning on a rain/cloud table), Bayes' rule derived from conditioning, diagnostic test over three slides (named quantities and a guess, Bayes' rule step by step, counting 100,000 people), prior → posterior, priors, MCMC over two slides (why the denominator is hard; how MCMC avoids it), diagnostics, what a PPL is |
 | 25–30 | Slides 19–24 (hierarchical models intro, pooling, model, code, workflow, divider) | Introduce the hospital model on slides so the notebook can move quickly |
 | 30–45 | Notebook §1–5 (main path) | Stop at "Takeaways". The Extras are for self-study |
-| 45–49 | Slides 25–28 (results ×3, takeaways) | Hospital A (H01) is a coin flip; partial pooling halves the error; τ learned from data |
-| 49–60 | Slide 29 (Q&A) | See prepared answers below |
+| 45–49 | Slides 25–29 (results ×4, summary) | Estimates for all hospitals; P(A worse than B) = 0.57; repeated simulations; posterior for τ |
+| 49–60 | Slide 30 (questions) | See prepared answers below |
 
 **If you're short on time**, cut the counting slide (12; give the 100,000-people version in one
 sentence on slide 11), then go straight from the shrinkage plot (§4) to the "worse than typical"
@@ -81,9 +81,8 @@ JAX/NumPyro versions may differ slightly; the qualitative story holds.)
 
 ## Before the session
 
-- [x] Fill in the workshop, date and presenter (slide 1)
-- [x] Add the notebook link (slide 29)
-- [ ] Share the deck from its Share menu if participants should see it (it's private by default)
+- [ ] Update the event, date and presenter on the cover slide
+- [ ] Check the repository link on the notebook and questions slides
 - [ ] Test the student notebook on Colab from a fresh account
 - [ ] Have the presenter notebook (with outputs) open as a fallback
 
