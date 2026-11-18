@@ -41,7 +41,7 @@ The full notebook runs in about 10 seconds on a laptop CPU.
 
 ## Run of show (60 min)
 
-Slide numbers follow the most recent deck, `slides/ai-uncertainty-simulation-2026.pdf` (30 slides).
+Slide numbers follow the most recent deck, `slides/ai-uncertainty-simulation-2026.pdf` (28 slides).
 
 | Time | Slides / notebook | Notes |
 |---|---|---|
@@ -50,8 +50,8 @@ Slide numbers follow the most recent deck, `slides/ai-uncertainty-simulation-202
 | 4–25 | Slides 4–18 | Belief, probability primer (definitions in symbols, then joint, marginalisation, conditioning on a rain/cloud table), Bayes' rule derived from conditioning, diagnostic test over three slides (named quantities and a guess, Bayes' rule step by step, counting 100,000 people), prior → posterior, priors, MCMC over two slides (why the denominator is hard; how MCMC avoids it), diagnostics, what a PPL is |
 | 25–30 | Slides 19–24 (hierarchical models intro, pooling, model, code, workflow, divider) | Introduce the hospital model on slides so the notebook can move quickly |
 | 30–45 | Notebook §1–5 (main path) | Stop at "Takeaways". The Extras are for self-study |
-| 45–49 | Slides 25–29 (results ×4, summary) | Estimates for all hospitals; P(A worse than B) = 0.57; repeated simulations; posterior for τ |
-| 49–60 | Slide 30 (questions) | See prepared answers below |
+| 45–49 | Slides 25–27 (results ×2, summary) | Estimates for all hospitals; P(A worse than B) = 0.57 |
+| 49–60 | Slide 28 (questions) | See prepared answers below |
 
 **If you're short on time**, cut the counting slide (12; give the 100,000-people version in one
 sentence on slide 11), then go straight from the shrinkage plot (§4) to the "worse than typical"
